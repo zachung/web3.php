@@ -1,5 +1,5 @@
 {
-    "name": "sc0vu/web3.php",
+    "name": "zachung/web3.php",
     "description": "Ethereum web3 interface.",
     "type": "library",
     "license": "MIT",
@@ -13,7 +13,7 @@
         "guzzlehttp/guzzle": "^6.3|^7.0",
         "PHP": "^7.1",
         "kornrunner/keccak": "~1.0",
-        "phpseclib/phpseclib": "~2.0.11",
+        "phpseclib/phpseclib": "^3.0",
         "ext-mbstring": "*"
     },
     "require-dev": {

@@ -150,6 +150,8 @@ class Ethabi
                     $types[] = $input['type'];
                 }
             }
+        } else {
+            $types = [];
         }
         if (count($types) !== count($params)) {
             throw new InvalidArgumentException('encodeParameters number of types must equal to number of params.');
@@ -196,7 +198,7 @@ class Ethabi
      * 
      * @param stdClass|array $type
      * @param string $param
-     * @return string
+     * @return array
      */
     public function decodeParameters($types, $param)
     {
