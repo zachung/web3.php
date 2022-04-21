@@ -4,20 +4,20 @@ namespace Test\Unit;
 
 use RuntimeException;
 use Test\TestCase;
-use phpseclib\Math\BigInteger as BigNumber;
+use phpseclib3\Math\BigInteger as BigNumber;
 
 class NetBatchTest extends TestCase
 {
     /**
      * net
-     * 
+     *
      * @var Web3\Net
      */
     protected $net;
 
     /**
      * setUp
-     * 
+     *
      * @return void
      */
     public function setUp(): void
@@ -29,7 +29,7 @@ class NetBatchTest extends TestCase
 
     /**
      * testBatch
-     * 
+     *
      * @return void
      */
     public function testBatch()

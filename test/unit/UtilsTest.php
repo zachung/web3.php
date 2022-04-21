@@ -5,7 +5,7 @@ namespace Test\Unit;
 use InvalidArgumentException;
 use stdClass;
 use Test\TestCase;
-use phpseclib\Math\BigInteger as BigNumber;
+use phpseclib3\Math\BigInteger as BigNumber;
 use Web3\Utils;
 use Web3\Contract;
 
@@ -15,7 +15,7 @@ class UtilsTest extends TestCase
      * testHex
      * 'hello world'
      * you can check by call pack('H*', $hex)
-     * 
+     *
      * @var string
      */
     protected $testHex = '68656c6c6f20776f726c64';
@@ -23,7 +23,7 @@ class UtilsTest extends TestCase
     /**
      * testJsonMethodString
      * from GameToken approve function
-     * 
+     *
      * @var string
      */
     protected $testJsonMethodString = '{
@@ -56,7 +56,7 @@ class UtilsTest extends TestCase
     /**
      * testIssue112Json
      * see: https://github.com/web3p/web3.php/issues/112
-     * 
+     *
      * @var string
      */
     protected $testIssue112Json = '[
@@ -134,7 +134,7 @@ class UtilsTest extends TestCase
 
     /**
      * setUp
-     * 
+     *
      * @return void
      */
     public function setUp(): void
@@ -144,7 +144,7 @@ class UtilsTest extends TestCase
 
     /**
      * testToHex
-     * 
+     *
      * @return void
      */
     public function testToHex()
@@ -156,7 +156,7 @@ class UtilsTest extends TestCase
         $this->assertEquals('0x927c0', Utils::toHex('600000', true));
         $this->assertEquals('0x927c0', Utils::toHex(600000, true));
         $this->assertEquals('0x927c0', Utils::toHex(new BigNumber(600000), true));
-        
+
         $this->assertEquals('0xea60', Utils::toHex(0x0ea60, true));
         $this->assertEquals('0xea60', Utils::toHex('60000', true));
         $this->assertEquals('0xea60', Utils::toHex(60000, true));
@@ -183,7 +183,7 @@ class UtilsTest extends TestCase
 
     /**
      * testHexToBin
-     * 
+     *
      * @return void
      */
     public function testHexToBin()
@@ -203,7 +203,7 @@ class UtilsTest extends TestCase
 
     /**
      * testIsZeroPrefixed
-     * 
+     *
      * @return void
      */
     public function testIsZeroPrefixed()
@@ -220,7 +220,7 @@ class UtilsTest extends TestCase
 
     /**
      * testIsAddress
-     * 
+     *
      * @return void
      */
     public function testIsAddress()
@@ -336,7 +336,7 @@ class UtilsTest extends TestCase
 
     /**
      * testSha3
-     * 
+     *
      * @return void
      */
     public function testSha3()
@@ -353,7 +353,7 @@ class UtilsTest extends TestCase
 
     /**
      * testToWei
-     * 
+     *
      * @return void
      */
     public function testToWei()
@@ -416,7 +416,7 @@ class UtilsTest extends TestCase
 
     /**
      * testToEther
-     * 
+     *
      * @return void
      */
     public function testToEther()
@@ -449,7 +449,7 @@ class UtilsTest extends TestCase
 
     /**
      * testFromWei
-     * 
+     *
      * @return void
      */
     public function testFromWei()
@@ -494,7 +494,7 @@ class UtilsTest extends TestCase
 
     /**
      * testJsonMethodToString
-     * 
+     *
      * @return void
      */
     public function testJsonMethodToString()
@@ -520,7 +520,7 @@ class UtilsTest extends TestCase
 
     /**
      * testJsonToArray
-     * 
+     *
      * @return void
      */
     public function testJsonToArray()
@@ -539,7 +539,7 @@ class UtilsTest extends TestCase
 
     /**
      * testIsHex
-     * 
+     *
      * @return void
      */
     public function testIsHex()
@@ -559,7 +559,7 @@ class UtilsTest extends TestCase
 
     /**
      * testIsNegative
-     * 
+     *
      * @return void
      */
     public function testIsNegative()
@@ -573,7 +573,7 @@ class UtilsTest extends TestCase
 
     /**
      * testToBn
-     * 
+     *
      * @return void
      */
     public function testToBn()

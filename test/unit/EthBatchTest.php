@@ -4,20 +4,20 @@ namespace Test\Unit;
 
 use RuntimeException;
 use Test\TestCase;
-use phpseclib\Math\BigInteger as BigNumber;
+use phpseclib3\Math\BigInteger as BigNumber;
 
 class EthBatchTest extends TestCase
 {
     /**
      * eth
-     * 
+     *
      * @var \Web3\Eth
      */
     protected $eth;
 
     /**
      * setUp
-     * 
+     *
      * @return void
      */
     public function setUp(): void
@@ -29,7 +29,7 @@ class EthBatchTest extends TestCase
 
     /**
      * testBatch
-     * 
+     *
      * @return void
      */
     public function testBatch()
